@@ -1,0 +1,186 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Contact Oktavia</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" href="assets/style/app.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" >
+    <link rel="manifest" href="manifest.json"/>
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="index.html">Sugar</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link" href="index.html">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="aboutme.html">About Me</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" href="contact.html">Contact</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    
+    <section id="contact" class="footer">
+      <div class="container">
+        <div class="contact"></div>
+        <h1 class="text-center">Contact Me</h1>
+        <h1 style="color: black;" class="text-center">Contact Me</h1>
+        <div class="container text-center contact">
+          <a href="https://www.instagram.com/rmdn_okt/?hl=en"><i class="fa-brands fa-instagram"></i></a>
+          <a href="https://wa.me/6281266480373"><i class="fa-brands fa-whatsapp"></i></a>
+          <a href="https://t.me/Ssstt_ugar"><i class="fa-brands fa-telegram"></i></a>
+        </div>
+        <!-- Form for sending a message -->
+<form id="messageForm" class="mt-5">
+  <!-- Text input for name -->
+  <div class="mb-3">
+    <label for="name" class="form-label">Name</label>
+    <input type="text" class="form-control" id="name" name="name" placeholder="Enter your name" required>
+  </div>
+
+  <!-- Text input for email -->
+  <div class="mb-3">
+    <label for="email" class="form-label">Email</label>
+    <input type="email" class="form-control" id="email" name="email" placeholder="Enter your email" required>
+  </div>
+
+  <!-- Textarea for message -->
+  <div class="mb-3">
+    <label for="message" class="form-label">Message</label>
+    <textarea class="form-control" id="message" name="message" rows="4" placeholder="Enter your message" required></textarea>
+  </div>
+
+  <!-- Dropdown for category selection -->
+  <div class="mb-3">
+    <label for="category" class="form-label">Category</label>
+    <select class="form-select" id="category" name="category" required>
+      <option value="question">Question</option>
+      <option value="suggestion">Suggestion</option>
+      <option value="issue">Issue</option>
+    </select>
+  </div>
+
+  <!-- Radio buttons for response preference -->
+  <div class="mb-3">
+    <label class="form-label">Would you like a response?</label>
+    <div class="form-check">
+      <input class="form-check-input" type="radio" name="response" id="yesResponse" value="yes" required>
+      <label class="form-check-label" for="yesResponse">Yes</label>
+    </div>
+    <div class="form-check">
+      <input class="form-check-input" type="radio" name="response" id="noResponse" value="no" required>
+      <label class="form-check-label" for="noResponse">No</label>
+    </div>
+  </div>
+
+  <!-- Submit button -->
+  <div class="d-grid">
+    <button type="submit" class="btn btn-primary">Submit</button>
+  </div>
+</form>
+
+<!-- Vertically centered modal -->
+<div class="modal fade" id="exampleModal5" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h1 class="modal-title fs-5" id="exampleModalLabel">NOTICE!</h1>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        Form Submitted Successfully
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-primary" data-bs-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Bootstrap JS and Popper.js (necessary for modals to work) -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+
+<!-- JavaScript to handle form submission and modal display -->
+<script>
+  document.getElementById("messageForm").addEventListener("submit", function(event){
+    event.preventDefault(); // Prevent the default form submission
+    
+    // Optional: Add your custom form validation or Ajax submission here
+
+    // Display the modal after form submission
+    var myModal = new bootstrap.Modal(document.getElementById('exampleModal5'));
+    myModal.show();
+  });
+</script>
+
+</body>
+</html>
+</div>
+</div>
+<p class="text-center watermark">Created by sugar</p>
+</section>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+<script>
+  if ('serviceWorker' in navigator) {
+    window.addEventListener('load', () => {
+      navigator.serviceWorker.register('/service-worker.js')
+      .then(registration => {
+        console.log('Service Worker registered with scope:', registration.scope);
+      }).catch(error => {
+        console.log('Service Worker registration failed:', error);
+      });
+    });
+  }
+</script>
+<script>
+  let deferredPrompt;
+
+  // Mendeteksi event 'beforeinstallprompt' dan menyimpannya
+  window.addEventListener('beforeinstallprompt', (e) => {
+    // Mencegah prompt langsung muncul
+    e.preventDefault();
+    // Menyimpan event agar bisa ditampilkan nanti
+    deferredPrompt = e;
+
+    // Menampilkan tombol instalasi
+    const installButton = document.getElementById('installButton');
+    installButton.style.display = 'block';
+
+    // Menangani event klik tombol instalasi
+    installButton.addEventListener('click', () => {
+      // Menampilkan prompt instalasi
+      deferredPrompt.prompt();
+      // Melihat pilihan pengguna
+      deferredPrompt.userChoice.then((choiceResult) => {
+        if (choiceResult.outcome === 'accepted') {
+          console.log('User accepted the install prompt');
+        } else {
+          console.log('User dismissed the install prompt');
+        }
+        // Menghapus deferredPrompt setelah pengguna memilih
+        deferredPrompt = null;
+      });
+    });
+  });
+
+  // Optional: Menyembunyikan tombol instalasi jika aplikasi sudah diinstal
+  window.addEventListener('appinstalled', () => {
+    console.log('PWA telah diinstal');
+    document.getElementById('installButton').style.display = 'none';
+  });
+</script>
+</body>
+</html>
+
